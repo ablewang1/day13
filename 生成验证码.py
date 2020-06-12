@@ -32,6 +32,7 @@ class GenerateCode():
                 draw.point((x,y),fill=self.gb_color())
         for i in range(4):
             draw.text((60*i+15,15),text=self.get_code(),fill=self.fr_color(),font=font)
+            draw.rectangle((10,10,50,75),outline=(255,0,0))#画框
         # img.save('coid.jpg')
         img.show()
 
